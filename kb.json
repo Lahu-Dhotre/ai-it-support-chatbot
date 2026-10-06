@@ -1,0 +1,56 @@
+{
+  "SOFTWARE_INSTALL": [
+    "Check if you have admin rights to install software.",
+    "Download the latest installer from the official website.",
+    "Disable antivirus temporarily if it blocks the installation.",
+    "Restart your computer and try again.",
+    "If you see an error message, copy/paste it here."
+  ],
+  "WIFI_ISSUE": [
+    "Turn Wi-Fi off/on and re-join the network.",
+    "Restart your device.",
+    "Check if other devices on the same Wi-Fi work.",
+    "Forget the Wi-Fi network and reconnect.",
+    "Move closer to the router to check signal strength."
+  ],
+  "VPN_ISSUE": [
+    "Confirm internet works without VPN first.",
+    "Sign out/in of the VPN app, then reconnect.",
+    "If there’s an error code, paste it exactly.",
+    "Try a different network (e.g., mobile hotspot).",
+    "Check if your VPN subscription or credentials are valid."
+  ],
+  "OUTLOOK_ISSUE": [
+    "Check Outlook Web (OWA) to see if it’s account vs app.",
+    "Restart Outlook and try again.",
+    "If it shows an error, copy/paste it.",
+    "Remove and re-add your email account in Outlook.",
+    "Check for Outlook or Office updates."
+  ],
+  "PRINTER_ISSUE": [
+    "Power cycle the printer.",
+    "Clear the print queue and try a test page.",
+    "Share printer model + exact error text.",
+    "Check if the printer is connected to the correct network.",
+    "Ensure printer drivers are up to date."
+  ],
+  "PASSWORD_RESET": [
+    "Try the self-service reset portal (if your org has it).",
+    "If MFA fails, check your phone time sync and try again.",
+    "Contact IT support if you are locked out.",
+    "Make sure you are using the correct username."
+  ],
+  "SLOW_COMPUTER": [
+    "Restart and check top CPU/RAM apps (Task Manager / Activity Monitor).",
+    "Make sure you have free disk space (10–20% free is nice).",
+    "Install updates and reboot.",
+    "Scan for malware or viruses.",
+    "Close unused applications and browser tabs."
+  ],
+  "UNKNOWN": [
+    "Tell me what you were trying to do when it failed.",
+    "Copy/paste the exact error text (if any).",
+    "Describe the steps you took before the issue occurred.",
+    "Let me know if this is urgent or blocking your work."
+  ]
+}
