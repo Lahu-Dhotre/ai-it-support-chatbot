@@ -1,64 +1,69 @@
 # AI IT Support Chatbot
 
-An AI-powered IT support assistant designed to help users with common technical issues, service requests, troubleshooting guidance, and general IT support workflows.
-
-This project combines Python development with Jupyter Notebook experimentation, making it a good starting point for building and iterating on an intelligent support chatbot.
+A smart IT support assistant built to help users troubleshoot common technical issues, answer internal support questions, and streamline IT helpdesk workflows using conversational AI.
 
 ## Overview
 
-The AI IT Support Chatbot aims to:
+This repository is a starting point for an AI-powered IT support chatbot that can assist with:
 
-- answer common IT support questions
-- guide users through troubleshooting steps
-- reduce repetitive support tickets
-- provide a conversational interface for internal or external support use cases
-- serve as a foundation for future RAG, LLM, and workflow integrations
+- password reset and account access issues
+- software and hardware troubleshooting
+- VPN and connectivity problems
+- employee onboarding and IT FAQs
+- repetitive support queries automation
+
+The project is designed to be extensible for future integrations with LLMs, knowledge bases, ticketing systems, and web or API interfaces.
+
+## Why this project
+
+IT support teams often handle repetitive requests that are easy to automate. This chatbot helps reduce manual effort by providing a conversational interface for common support scenarios while leaving complex issues to human agents.
 
 ## Features
 
-- Natural language support assistant
-- IT troubleshooting guidance
-- FAQ-style Q&A support
-- Extensible architecture for model and data integration
+- Conversational AI for IT support tasks
+- Troubleshooting guidance for common issues
+- FAQ-style support responses
 - Notebook-based experimentation and prototyping
-- Python-based backend and automation support
+- Python-based backend development
+- Extensible architecture for future AI integrations
 
 ## Tech Stack
 
 - Python
 - Jupyter Notebook
 - Large Language Models (LLM-ready)
-- Optional vector database / retrieval system for knowledge base expansion
+- Optional vector database / retrieval layer for knowledge search
+- API or web interface integration (future extension)
 
-## Project Structure
+## Repository Structure
 
 ```text
 .
 ├── README.md
-├── notebooks/               # Jupyter notebooks for experimentation
-├── src/                     # Python source code
-├── data/                    # Knowledge base or support data
-├── models/                  # Model artifacts if needed
-└── requirements.txt         # Python dependencies
+├── notebooks/            # Notebook experiments and prototypes
+├── src/                  # Python source code
+├── data/                 # Knowledge base, FAQs, and support content
+├── models/               # Model artifacts or configuration files
+├── requirements.txt      # Python dependencies
+└── .env.example           # Example environment configuration
 ```
 
-## Getting Started
-
-### Prerequisites
+## Prerequisites
 
 - Python 3.10+
 - pip
 - Jupyter Notebook (optional but recommended)
+- An OpenAI-compatible API key or other AI model provider credentials (for future chatbot use)
 
-### Installation
+## Installation
 
 ```bash
 python -m venv .venv
-source .venv/bin/activate  # On Windows: .venv\Scripts\activate
+source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-If `requirements.txt` is not present yet, create it with the required dependencies for your chatbot workflow, such as:
+If `requirements.txt` is not present yet, create one with dependencies such as:
 
 ```txt
 jupyter
@@ -68,41 +73,49 @@ python-dotenv
 openai
 ```
 
+## Configuration
+
+Create a `.env` file in the project root and add any required environment variables, for example:
+
+```env
+OPENAI_API_KEY=your_api_key_here
+MODEL_NAME=gpt-4o-mini
+```
+
 ## Usage
 
-1. Open the Jupyter notebooks for experimentation and prototype development.
-2. Build or connect the chatbot logic in the Python source files.
-3. Add your internal knowledge base, troubleshooting guides, and FAQs.
-4. Connect the assistant to a frontend, API, or internal support workflow.
+1. Explore the notebooks to prototype prompts, workflows, and retrieval logic.
+2. Add support knowledge such as troubleshooting guides and FAQs in the `data/` folder.
+3. Build your chatbot logic in the `src/` directory.
+4. Connect the chatbot to a frontend, API, or internal support portal as needed.
 
 ## Example Use Cases
 
-- password reset assistance
-- VPN / connectivity troubleshooting
-- software installation guidance
-- hardware issue triage
-- employee onboarding support queries
+- Resetting passwords or explaining account access steps
+- Guiding users through VPN connection problems
+- Helping with software installation issues
+- Answering common IT policy or onboarding questions
+- Routing repetitive issues to the right support flow
 
-## Notes
+## Future Enhancements
 
-This repository is currently a foundation for an AI-powered IT support assistant and can be expanded with:
+This repository can be expanded with:
 
-- retrieval-augmented generation (RAG)
+- Retrieval-Augmented Generation (RAG)
 - support ticket integration
 - authentication and user management
-- logging and analytics
-- deployment via web app or API
-
-## License
-
-This project does not currently specify a license. Add a license file if you want to define usage terms.
+- analytics and logging
+- deployment as a web app or internal chatbot service
 
 ## Contributing
 
-Contributions are welcome. You can:
+Contributions are welcome. You can help by:
 
-- improve the chatbot logic
-- add troubleshooting flows
-- expand support data and FAQs
-- refine the notebook experiments
+- improving prompts and responses
+- adding knowledge base content
+- refining chatbot workflows
+- improving notebook experiments and architecture
 
+## Notes
+
+This project is currently a foundation for an AI-powered IT support assistant and is intended to be developed further based on your specific business or support requirements.
